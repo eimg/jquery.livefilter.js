@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Filter Example</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.livefilter.js"></script>
+    <script>
+        $(function() {
+            $("#header input").liveFilterOf("#items li");
+        });
+    </script>
+</head>
+<body>
+	<div id="wrapper">
+	    <div id="header">
+	        <input type="text" placeholder="Filter..." />
+	    </div>
+
+	    <ul id="items">
+	        <li>
+	            <h2>Lorem ipsum dolor</h2>
+	            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	            <span>nulla pariatur</span>
+	        </li>
+	        <li>
+	            <h2>Consectetur adipisicing elit</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	            <span>quo voluptas</span>
+	        </li>
+	        <li>
+	            <h2>Sed do eiusmod tempor</h2>
+	            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</p>
+	            <span>eum fugiat</span>
+	        </li>
+	        <li>
+	            <h2>Incididunt ut labore</h2>
+	            <p>Veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+	            <span>qui dolorem</span>
+	        </li>
+	        <li>
+	            <h2>Et dolore magna</h2>
+	            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat </p>
+	            <span>vel illum</span>
+	        </li>
+	        <li>
+	            <h2>Dolore magna aliqua</h2>
+	            <p>In ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	            <span>consequatur</span>
+	        </li>
+	    </ul>
+	</div>
+</body>
+</html>
+
