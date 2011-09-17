@@ -23,10 +23,10 @@
 
 		// Building a case-insensitive :contains()
 		jQuery.expr[':'].Contains = function(a,i,m){
-            return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
-        };
+			return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+		};
 
-		if(!$(items).length) return;
+		if(!$(items).length) return this;
 
 		this.each(function() {
 			$(this).change(function() {
